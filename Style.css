@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -10,6 +11,12 @@ header {
     color: white;
     text-align: center;
     padding: 25px;
+}
+
+header button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
 }
 
 nav {
@@ -27,6 +34,14 @@ nav a {
 
 section {
     padding: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .search {
@@ -45,6 +60,13 @@ input {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation for cards */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 .aircraft img {
@@ -54,6 +76,7 @@ input {
     border-radius: 8px;
 }
 
+/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -74,8 +97,11 @@ button {
     padding: 10px;
     margin: 5px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 
+/* Footer */
 footer {
     background: #083d9a;
     color: white;
@@ -99,7 +125,43 @@ footer {
     background: #2a2a2a;
 }
 
-/* Mobile */
+/* Flying plane animation */
+.plane-fly {
+    position: absolute;
+    top: 50px;
+    left: -150px;
+    width: 100px;
+    animation: flyAcross 15s linear infinite;
+    z-index: 10;
+}
+
+@keyframes flyAcross {
+    0% { left: -150px; transform: rotate(0deg); }
+    50% { left: 50%; transform: rotate(5deg); }
+    100% { left: 100%; transform: rotate(0deg); }
+}
+
+/* Quiz animations */
+.correct {
+    animation: bounce 0.5s ease;
+}
+
+.wrong {
+    animation: shake 0.5s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     nav a {
         display: block;

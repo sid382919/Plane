@@ -34,24 +34,7 @@ nav a {
 
 section {
     padding: 30px;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.search {
-    text-align: center;
-}
-
-input {
-    width: 60%;
-    padding: 10px;
-    font-size: 16px;
+    color: #333;      /* Ensure visible text */
 }
 
 .card {
@@ -63,7 +46,6 @@ input {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover animation for cards */
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
@@ -76,7 +58,6 @@ input {
     border-radius: 8px;
 }
 
-/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -161,13 +142,7 @@ footer {
     75% { transform: translateX(5px); }
 }
 
-/* Mobile Responsiveness */
+/* Mobile */
 @media (max-width: 768px) {
-    nav a {
-        display: block;
-        margin: 8px 0;
-    }
-    input {
-        width: 90%;
-    }
+    nav a { display: block; margin: 8px 0; }
 }

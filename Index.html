@@ -10,252 +10,29 @@
 
 <header>
     <h1>✈️ World of Aviation</h1>
-    <p>Aircraft • Airlines • Airports • Aviation Technology</p>
+    <p>Explore Aircraft, Airlines, Airports & More!</p>
     <button id="darkToggle">🌙 Dark Mode</button>
 </header>
 
 <nav>
-    <a href="#aircraft">Aircraft</a>
-    <a href="#compare">Comparison</a>
-    <a href="#parts">Plane Parts</a>
-    <a href="#airlines">Airlines</a>
-    <a href="#airports">Airports</a>
-    <a href="#quiz">Quiz</a>
+    <a href="index.html">Home</a>
+    <a href="aircraft.html">Aircraft</a>
+    <a href="compare.html">Comparison</a>
+    <a href="parts.html">Plane Parts</a>
+    <a href="airlines.html">Airlines</a>
+    <a href="airports.html">Airports</a>
+    <a href="quiz.html">Quiz</a>
 </nav>
 
+<section>
+<h2>Welcome to World of Aviation</h2>
+<p>This website contains detailed information about the most popular Airbus and Boeing aircraft, major airlines, airports, and airplane parts. You can also test your knowledge in the aviation quiz!</p>
 <img src="images/flying_plane.png" class="plane-fly" alt="Flying plane">
-
-<section class="search">
-<input type="text" id="searchInput" placeholder="Search aircraft...">
 </section>
 
-<!-- AIRCRAFT -->
-<section id="aircraft">
-<h2>Commercial Aircraft (Airbus & Boeing)</h2>
-
-<!-- Airbus -->
-<div class="card aircraft">
-<img src="images/a220.jpg" alt="Airbus A220">
-<h3>Airbus A220</h3>
-<ul>
-<li>Manufacturer: Airbus</li>
-<li>Type: Narrow-body</li>
-<li>Passengers: 100–150</li>
-<li>Range: 6,300 km</li>
-<li>Engines: PW1500G</li>
-</ul>
-<p>Modern regional jet optimized for efficiency and comfort on short routes.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/a318.jpg" alt="Airbus A318">
-<h3>Airbus A318</h3>
-<ul>
-<li>Type: Narrow-body</li>
-<li>Passengers: 107–132</li>
-<li>Range: 5,700 km</li>
-<li>Engines: CFM56 / PW6000</li>
-</ul>
-<p>Smallest member of the A320 family, used on short routes and business-heavy flights.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/a319.jpg" alt="Airbus A319">
-<h3>Airbus A319</h3>
-<ul>
-<li>Type: Narrow-body</li>
-<li>Passengers: 124–156</li>
-<li>Range: 6,900 km</li>
-<li>Engines: CFM56 / PW6000</li>
-</ul>
-<p>Popular short- and medium-haul aircraft with fuel efficiency improvements.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/a320.jpg" alt="Airbus A320">
-<h3>Airbus A320</h3>
-<ul>
-<li>Type: Narrow-body</li>
-<li>Passengers: 140–180</li>
-<li>Range: 6,300 km</li>
-<li>Engines: CFM56 / PW1100G</li>
-</ul>
-<p>The most common single-aisle aircraft in the world, fly-by-wire technology.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/a321.jpg" alt="Airbus A321">
-<h3>Airbus A321</h3>
-<ul>
-<li>Type: Narrow-body</li>
-<li>Passengers: 185–236</li>
-<li>Range: 5,950–7,400 km</li>
-<li>Engines: CFM56 / PW1100G</li>
-</ul>
-<p>Stretched version of A320 for higher capacity medium-haul routes.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/a330.jpg" alt="Airbus A330">
-<h3>Airbus A330</h3>
-<ul>
-<li>Type: Wide-body</li>
-<li>Passengers: 250–300</li>
-<li>Range: 11,750 km</li>
-<li>Engines: Rolls-Royce Trent 700 / GE CF6 / PW4000</li>
-</ul>
-<p>Long-haul twin-engine jet used on international routes.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/a340.jpg" alt="Airbus A340">
-<h3>Airbus A340</h3>
-<ul>
-<li>Type: Wide-body quadjet</li>
-<li>Passengers: 275–375</li>
-<li>Range: 13,900 km</li>
-<li>Engines: CFM56 / Trent 500</li>
-</ul>
-<p>Long-range quad-engine jet popular in the 1990s–2000s.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/a350.jpg" alt="Airbus A350">
-<h3>Airbus A350</h3>
-<ul>
-<li>Type: Wide-body</li>
-<li>Passengers: 300–410</li>
-<li>Range: 15,000 km</li>
-<li>Engines: Rolls-Royce Trent XWB</li>
-</ul>
-<p>Modern long-haul aircraft with advanced aerodynamics and fuel efficiency.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/a380.jpg" alt="Airbus A380">
-<h3>Airbus A380</h3>
-<ul>
-<li>Type: Superjumbo</li>
-<li>Passengers: 500–850</li>
-<li>Range: 15,200 km</li>
-<li>Engines: Rolls-Royce Trent 900 / Engine Alliance GP7200</li>
-</ul>
-<p>Largest passenger aircraft ever built, used on high-capacity international routes.</p>
-</div>
-
-<!-- Boeing -->
-<div class="card aircraft">
-<img src="images/b707.jpg" alt="Boeing 707">
-<h3>Boeing 707</h3>
-<ul>
-<li>Type: Narrow-body</li>
-<li>Passengers: 140–189</li>
-<li>Range: 6,000–6,500 km</li>
-<li>Engines: Pratt & Whitney JT3C</li>
-</ul>
-<p>First successful commercial jetliner, introduced jet travel to the world.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/b717.jpg" alt="Boeing 717">
-<h3>Boeing 717</h3>
-<ul>
-<li>Type: Regional jet</li>
-<li>Passengers: 100–125</li>
-<li>Range: 2,060 km</li>
-<li>Engines: Rolls-Royce BR715</li>
-</ul>
-<p>Short-range twin-engine jet, often used by regional airlines.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/b727.jpg" alt="Boeing 727">
-<h3>Boeing 727</h3>
-<ul>
-<li>Type: Narrow-body tri-engine jet</li>
-<li>Passengers: 149–189</li>
-<li>Range: 4,000–4,600 km</li>
-<li>Engines: Pratt & Whitney JT8D</li>
-</ul>
-<p>Popular in the 1960s–1980s for domestic and regional flights.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/b737.jpg" alt="Boeing 737">
-<h3>Boeing 737</h3>
-<ul>
-<li>Type: Narrow-body</li>
-<li>Passengers: 130–215</li>
-<li>Range: 6,500 km</li>
-<li>Engines: CFM56 / LEAP-1B</li>
-</ul>
-<p>Most-produced jetliner in history, widely used for short- and medium-haul flights.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/b747.jpg" alt="Boeing 747">
-<h3>Boeing 747</h3>
-<ul>
-<li>Type: Wide-body jumbo</li>
-<li>Passengers: 366–524</li>
-<li>Range: 13,450 km</li>
-<li>Engines: CF6-80C2B1F / PW4062 / Trent 900</li>
-</ul>
-<p>“Queen of the Skies,” famous for long-haul international flights.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/b757.jpg" alt="Boeing 757">
-<h3>Boeing 757</h3>
-<ul>
-<li>Type: Narrow-body</li>
-<li>Passengers: 200–239</li>
-<li>Range: 6,295 km</li>
-<li>Engines: Rolls-Royce RB211 / Pratt & Whitney PW2000</li>
-</ul>
-<p>Mid-size aircraft ideal for domestic and transcontinental flights.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/b767.jpg" alt="Boeing 767">
-<h3>Boeing 767</h3>
-<ul>
-<li>Type: Wide-body twin-jet</li>
-<li>Passengers: 181–375</li>
-<li>Range: 11,000 km</li>
-<li>Engines: Pratt & Whitney PW4000 / CF6 / RB211</li>
-</ul>
-<p>Long-haul twin-engine used for international and cargo flights.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/b777.jpg" alt="Boeing 777">
-<h3>Boeing 777</h3>
-<ul>
-<li>Type: Wide-body twin-jet</li>
-<li>Passengers: 314–396</li>
-<li>Range: 14,500 km</li>
-<li>Engines: GE90 / Trent 800 / PW4000</li>
-</ul>
-<p>Popular for long-haul international travel; large capacity with efficiency.</p>
-</div>
-
-<div class="card aircraft">
-<img src="images/b787.jpg" alt="Boeing 787 Dreamliner">
-<h3>Boeing 787 Dreamliner</h3>
-<ul>
-<li>Type: Wide-body twin-jet</li>
-<li>Passengers: 240–330</li>
-<li>Range: 14,100 km</li>
-<li>Engines: Rolls-Royce Trent 1000 / GEnx</li>
-</ul>
-<p>Modern, fuel-efficient long-haul aircraft with passenger comfort improvements.</p>
-</div>
-
-</section>
-
-<!-- The rest (Comparison, Plane Parts, Airlines, Airports, Quiz, Footer) -->
-<!-- Use the sections from my previous messages. They remain the same. -->
+<footer>
+<p>© 2026 World of Aviation • Educational Project</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

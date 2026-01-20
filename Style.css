@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background: #0b5ed7;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background: #083d9a;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 30px;
+}
+
+.search {
+    text-align: center;
+}
+
+input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.aircraft img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #0b5ed7;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #083d9a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Dark Mode */
+.dark {
+    background: #121212;
+    color: #eee;
+}
+
+.dark header,
+.dark nav,
+.dark footer {
+    background: #1f1f1f;
+}
+
+.dark .card {
+    background: #2a2a2a;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+    input {
+        width: 90%;
+    }
+}

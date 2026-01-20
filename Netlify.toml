@@ -1,0 +1,20 @@
+# Netlify configuration file
+
+[build]
+  # Since this is a static site, no build command is needed
+  publish = "."
+
+# Redirect all requests to index.html (optional, good for single-page sites)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for caching and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
